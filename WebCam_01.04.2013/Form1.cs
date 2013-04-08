@@ -169,7 +169,7 @@ namespace WebCam_01._04._2013
 
         void listBox2_DragDrop(object sender, DragEventArgs e)
         {
-            if(listBox1.SelectedItem == null || listBox1.SelectedItem == "")
+            if(listBox1.SelectedItem == null || listBox1.SelectedItem.ToString() == "")
             {
                 return;
             }
@@ -237,9 +237,5 @@ namespace WebCam_01._04._2013
 
         #endregion EventHandlers
 
-        /*public void MirrorVertical()
-        {
-            image = image.Flip(Emgu.CV.CvEnum.FLIP.HORIZONTAL);
-        }*/
     }
 }
