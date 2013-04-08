@@ -1,0 +1,9 @@
+# built application files
+*.suo
+*.cache
+*.cache
+*.exe
+*.pdb
+*.resources
+*GeneratedFile_*
+*csproj.*
