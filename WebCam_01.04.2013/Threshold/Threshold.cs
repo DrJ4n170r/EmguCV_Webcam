@@ -19,13 +19,11 @@ namespace WebCam_01._04._2013
         private DialogThreshold dlgM;
         public Threshold()
         {
-            dlgM = new DialogThreshold();
+            dlgM = new DialogThreshold(this);
         }
 
         public void DoImageStuff(ref Emgu.CV.Image<Emgu.CV.Structure.Bgr, byte> image)
         {
-            image = image.Flip(Emgu.CV.CvEnum.FLIP.HORIZONTAL);
-            image._EqualizeHist();
             Emgu.CV.Image<Emgu.CV.Structure.Gray, byte>[] Bgr = image.Split();
             Emgu.CV.Image<Emgu.CV.Structure.Gray, byte> R = Bgr[2];
             Emgu.CV.Image<Emgu.CV.Structure.Gray, byte> G = Bgr[1];
@@ -40,7 +38,6 @@ namespace WebCam_01._04._2013
 
             Emgu.CV.Image<Emgu.CV.Structure.Bgr, byte> tmp = new Image<Emgu.CV.Structure.Bgr, byte>(new Image<Gray, byte>[] { B, G, R });
             image = tmp;
-
         }
 
         public void ShowDialog()

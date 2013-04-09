@@ -42,9 +42,11 @@ namespace WebCam_01._04._2013
 
             classDict.Add("Mirror Vertically", new MirrorVertically());
             classDict.Add("Threshold", new Threshold());
+            classDict.Add("Equalize Histogram", new EqualizeHistogram());
 
             listBox1.Items.Add("Mirror Vertically");
             listBox1.Items.Add("Threshold");
+            listBox1.Items.Add("Equalize Histogram");
 
             // Event stuff f. listbox1
             listBox1.AllowDrop = true;

@@ -86,6 +86,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(30, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // textBox2
             // 
@@ -93,6 +94,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(30, 20);
             this.textBox2.TabIndex = 1;
+            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // textBox3
             // 
@@ -100,6 +102,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(30, 20);
             this.textBox3.TabIndex = 1;
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // button1
             // 
@@ -127,6 +130,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(30, 20);
             this.textBox4.TabIndex = 1;
+            this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // textBox5
             // 
@@ -134,6 +138,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(30, 20);
             this.textBox5.TabIndex = 1;
+            this.textBox5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // textBox6
             // 
@@ -141,6 +146,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(30, 20);
             this.textBox6.TabIndex = 1;
+            this.textBox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar1
             // 
@@ -151,6 +157,7 @@
             this.trackBar1.TabIndex = 3;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            this.trackBar1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar2
             // 
@@ -161,6 +168,7 @@
             this.trackBar2.TabIndex = 3;
             this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar2.ValueChanged += new System.EventHandler(this.trackBar2_ValueChanged);
+            this.trackBar2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar3
             // 
@@ -171,6 +179,7 @@
             this.trackBar3.TabIndex = 3;
             this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar3.ValueChanged += new System.EventHandler(this.trackBar3_ValueChanged);
+            this.trackBar3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar4
             // 
@@ -181,6 +190,7 @@
             this.trackBar4.TabIndex = 3;
             this.trackBar4.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar4.ValueChanged += new System.EventHandler(this.trackBar4_ValueChanged);
+            this.trackBar4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar5
             // 
@@ -191,6 +201,7 @@
             this.trackBar5.TabIndex = 3;
             this.trackBar5.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar5.ValueChanged += new System.EventHandler(this.trackBar5_ValueChanged);
+            this.trackBar5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // trackBar6
             // 
@@ -201,6 +212,7 @@
             this.trackBar6.TabIndex = 3;
             this.trackBar6.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar6.ValueChanged += new System.EventHandler(this.trackBar6_ValueChanged);
+            this.trackBar6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             // 
             // DialogThreshold
             // 
@@ -227,6 +239,7 @@
             this.Name = "DialogThreshold";
             this.Text = "DialogMirror";
             this.Shown += new System.EventHandler(this.DialogMirror_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DialogThreshold_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
